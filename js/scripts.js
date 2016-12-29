@@ -44,7 +44,7 @@ console.log(allNames);
 
 var newName = 'Marian';
 
-if (allNames.indexOf(newName) == -1) {
+if (allNames.indexOf(newName) === -1) {
     var addedNewName = allNames.push(newName)     
     console.log('Imię', newName, 'nie występowało wcześniej. Dodano nowe imię: ', newName, '.')
 }
