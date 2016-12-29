@@ -4,7 +4,8 @@ var textAnimalUpperCased = textAnimal.toUpperCase();
 console.log(textAnimalUpperCased);
 
 var textBasic = textBasic.replace('Papugi', textAnimalUpperCased);
+var halfText = textBasic.length / 2
+
 console.log(textBasic);
-console.log(textBasic.length / 2);
-console.log(textBasic.length);
-console.log(textBasic.slice(0, length / 2));
+
+console.log(textBasic.slice(0, textBasic.length / 2));
