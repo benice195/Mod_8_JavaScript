@@ -48,7 +48,7 @@ if (allNames.indexOf(newName) === -1) {
     var addedNewName = allNames.push(newName)     
     console.log('Imię', newName, 'nie występowało wcześniej. Dodano nowe imię: ', newName, '.')
 }
-else if (allNames.indexOf(newName) >= 0) {
+else {
     console.log('Imię', newName, 'już występuje.')
 }
 console.log(addedNewName);
