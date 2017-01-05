@@ -17,7 +17,10 @@ var computerResultElem = document.getElementById('js-computerResult');
 var gameState = 'notStarted'; 
 var player = {name: '', score: 0};
 var computer = {score: 0};
-
+function endGameState(){
+    gameState = 'ended';
+    setGameElements()
+};
 
 
 newGameBtn.addEventListener('click', newGame);
@@ -94,12 +97,10 @@ function checkRoundWinner(playerPick, computerPick) {
 function checkEndOfGame() {	
     if (player.score === 10) {
         alert('Wygrałeś!');
-        gameState = 'ended';
-        setGameElements()
+        endGameState();
 	} else if (computer.score === 10) {
         alert('Wygrał przeciwnik!');
-        gameState = 'ended';
-        setGameElements()
+        endGameState();
 	}
 	    
 }
